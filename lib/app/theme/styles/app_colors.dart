@@ -12,7 +12,7 @@ class AppColors {
   static const Color shape = Color(0xFFFAFAFC);
   static const Color greenCard = Color(0xFF34C369);
   static const Color redCard = Color(0xFFFF6868);
-  static const Color primary = Color(0xFFFF941A);
+  static const Color lightOrange = Color(0xFFFFBE69);
   static const Color icon = Color(0xFFa0a0a0);
   static final Color orange = Colors.deepOrange[400]!;
   static const Color purple = Color(0xFF6d6cb4);

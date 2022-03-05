@@ -34,7 +34,19 @@ class DesktopNavbarWidget extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'Portfolio',
+                  'Obras',
+                  style: AppTextStyles.cardTextDarkBold,
+                ),
+                const SizedBox(
+                  height: 20,
+                  width: 15,
+                  child: VerticalDivider(
+                    color: AppColors.body,
+                    width: 1,
+                  ),
+                ),
+                Text(
+                  'Serviços',
                   style: AppTextStyles.cardTextDarkBold,
                 ),
                 const SizedBox(

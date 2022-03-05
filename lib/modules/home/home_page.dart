@@ -16,25 +16,11 @@ class HomePage extends GetView<HomeController> {
       body: SizedBox(
         width: Get.width,
         height: Get.height,
-        /*decoration: const BoxDecoration(
-          gradient: LinearGradient(
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
-              colors: [
-                Color.fromRGBO(11, 16, 52, 1.0),
-                Color.fromRGBO(11, 16, 52, 1.0)
-                /*Color.fromRGBO(11, 16, 52, 1.0),
-                Color.fromRGBO(11, 16, 52, 1.0)*/
-              ]),
-        ),*/
         child: SingleChildScrollView(
           child: Column(
             children: const [
               Navbar(),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
-                child: LandingPageWidget(),
-              )
+              LandingPageWidget()
             ],
           ),
         ),

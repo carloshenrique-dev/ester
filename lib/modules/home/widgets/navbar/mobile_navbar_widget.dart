@@ -1,63 +1,84 @@
 import 'package:ester/app/theme/styles/app_text_styles.dart';
 import 'package:flutter/material.dart';
+import '../../../../app/theme/styles/app_colors.dart';
+import '../../../../app/theme/styles/app_images.dart';
 
 class MobileNavbarWidget extends StatelessWidget {
   const MobileNavbarWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final ThemeData theme = Theme.of(context);
-
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
       child: SizedBox(
         child: Column(
           children: [
-            Text(
-              'Ester Catuaba',
-              style: theme.brightness == Brightness.dark
-                  ? AppTextStyles.homeTitleWhite
-                  : AppTextStyles.homeTitleDark,
+            Image.asset(
+              AppImages.logoAppBar,
+              height: 85,
             ),
-            Padding(
-              padding: const EdgeInsets.all(12),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'Sobre nos',
-                    style: theme.brightness == Brightness.dark
-                        ? AppTextStyles.cardTextLightBold
-                        : AppTextStyles.cardTextDarkBold,
+            const SizedBox(
+              height: 20,
+            ),
+            Wrap(
+              alignment: WrapAlignment.center,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              clipBehavior: Clip.antiAlias,
+              children: [
+                Text(
+                  'Início',
+                  style: AppTextStyles.cardTextDarkBold,
+                ),
+                const SizedBox(
+                  height: 20,
+                  width: 15,
+                  child: VerticalDivider(
+                    color: AppColors.body,
+                    width: 1,
                   ),
-                  const SizedBox(
-                    width: 30,
+                ),
+                Text(
+                  'Obras',
+                  style: AppTextStyles.cardTextDarkBold,
+                ),
+                const SizedBox(
+                  height: 20,
+                  width: 15,
+                  child: VerticalDivider(
+                    color: AppColors.body,
+                    width: 1,
                   ),
-                  Text(
-                    'Portfolio',
-                    style: theme.brightness == Brightness.dark
-                        ? AppTextStyles.cardTextLightBold
-                        : AppTextStyles.cardTextDarkBold,
+                ),
+                Text(
+                  'Sobre nós',
+                  style: AppTextStyles.cardTextDarkBold,
+                ),
+                const SizedBox(
+                  height: 20,
+                  width: 15,
+                  child: VerticalDivider(
+                    color: AppColors.body,
+                    width: 1,
                   ),
-                  const SizedBox(
-                    width: 30,
+                ),
+                Text(
+                  'Serviços',
+                  style: AppTextStyles.cardTextDarkBold,
+                ),
+                const SizedBox(
+                  height: 20,
+                  width: 15,
+                  child: VerticalDivider(
+                    color: AppColors.body,
+                    width: 1,
                   ),
-                  MaterialButton(
-                    onPressed: () {},
-                    color: Colors.pink,
-                    shape: const RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(5),
-                      ),
-                    ),
-                    child: Text(
-                      'Contato',
-                      style: AppTextStyles.cardTextLightBold,
-                    ),
-                  ),
-                ],
-              ),
-            )
+                ),
+                Text(
+                  'Contato',
+                  style: AppTextStyles.cardTextDarkBold,
+                ),
+              ],
+            ),
           ],
         ),
       ),

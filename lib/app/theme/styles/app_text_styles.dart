@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'app_colors.dart';
 
 class AppTextStyles {
-  /*static final TextStyle homeTitleDark = GoogleFonts.mulish(
+  static final TextStyle homeTitleStrongDark = GoogleFonts.mulish(
     color: AppColors.grayColor,
     fontSize: 28,
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
-  );*/
+  );
+  static final TextStyle homeTitleStrongWhite = GoogleFonts.mulish(
+    color: AppColors.whiteColor,
+    fontSize: 28,
+    fontWeight: FontWeight.w700,
+    fontStyle: FontStyle.normal,
+  );
   /*static final TextStyle homeTitleWhite = GoogleFonts.mulish(
     color: AppColors.whiteColor,
     fontSize: 28,
