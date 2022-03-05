@@ -1,6 +1,8 @@
+import 'package:ester/app/theme/styles/app_colors.dart';
 import 'package:ester/modules/home/widgets/landing_page/landing_page_widget.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import '../../app/theme/styles/app_images.dart';
 import './home_controller.dart';
 import 'widgets/navbar/navbar_widget.dart';
 
@@ -10,10 +12,11 @@ class HomePage extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      backgroundColor: AppColors.whiteColor,
+      body: SizedBox(
         width: Get.width,
         height: Get.height,
-        decoration: const BoxDecoration(
+        /*decoration: const BoxDecoration(
           gradient: LinearGradient(
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
@@ -23,7 +26,7 @@ class HomePage extends GetView<HomeController> {
                 /*Color.fromRGBO(11, 16, 52, 1.0),
                 Color.fromRGBO(11, 16, 52, 1.0)*/
               ]),
-        ),
+        ),*/
         child: SingleChildScrollView(
           child: Column(
             children: const [

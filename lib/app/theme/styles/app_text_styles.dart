@@ -16,25 +16,25 @@ class AppTextStyles {
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
   );*/
-  static final TextStyle lotesTitleDark = GoogleFonts.lexendDeca(
+  static final TextStyle lotesTitleDark = GoogleFonts.mulish(
     color: AppColors.grayColor,
     fontSize: 22,
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
   );
-  static final TextStyle lotesTitleWhite = GoogleFonts.lexendDeca(
+  static final TextStyle lotesTitleWhite = GoogleFonts.mulish(
     color: AppColors.whiteColor,
     fontSize: 22,
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
   );
-  static final TextStyle homeTitleWhite = GoogleFonts.inter(
+  static final TextStyle homeTitleWhite = GoogleFonts.mulish(
     color: AppColors.whiteColor,
     fontSize: 25,
     fontWeight: FontWeight.w600,
     fontStyle: FontStyle.normal,
   );
-  static final TextStyle homeTitleDark = GoogleFonts.inter(
+  static final TextStyle homeTitleDark = GoogleFonts.mulish(
     color: AppColors.grayColor,
     fontSize: 25,
     fontWeight: FontWeight.w600,
@@ -52,47 +52,47 @@ class AppTextStyles {
     fontWeight: FontWeight.bold,
     fontStyle: FontStyle.normal,
   );
-  static final captionBodyLight = GoogleFonts.inter(
+  static final captionBodyLight = GoogleFonts.mulish(
     fontSize: 13,
     fontWeight: FontWeight.w400,
     color: AppColors.body,
   );
-  static final captionBodyDark = GoogleFonts.inter(
+  static final captionBodyDark = GoogleFonts.mulish(
     fontSize: 13,
     fontWeight: FontWeight.w400,
     color: AppColors.whiteColor,
   );
-  static final trailingRegularLight = GoogleFonts.lexendDeca(
+  static final trailingRegularLight = GoogleFonts.mulish(
     fontSize: 16,
     fontWeight: FontWeight.w400,
     color: AppColors.whiteColor,
   );
-  static final bottomText = GoogleFonts.lexendDeca(
+  static final bottomText = GoogleFonts.mulish(
     fontSize: 14,
     fontWeight: FontWeight.w400,
     color: AppColors.whiteColor,
   );
-  static final qtdBoldDark = GoogleFonts.lexendDeca(
+  static final qtdBoldDark = GoogleFonts.mulish(
     fontSize: 18,
     fontWeight: FontWeight.w600,
     color: AppColors.grayColor,
   );
-  static final qtdBoldLight = GoogleFonts.lexendDeca(
+  static final qtdBoldLight = GoogleFonts.mulish(
     fontSize: 18,
     fontWeight: FontWeight.w600,
     color: AppColors.whiteColor,
   );
-  static final trailingRegularDark = GoogleFonts.lexendDeca(
+  static final trailingRegularDark = GoogleFonts.mulish(
     fontSize: 16,
     fontWeight: FontWeight.w400,
     color: AppColors.grayColor,
   );
-  static final trailingBoldLight = GoogleFonts.lexendDeca(
+  static final trailingBoldLight = GoogleFonts.mulish(
     fontSize: 16,
     fontWeight: FontWeight.w600,
     color: AppColors.whiteColor,
   );
-  static final trailingBoldDark = GoogleFonts.lexendDeca(
+  static final trailingBoldDark = GoogleFonts.mulish(
     fontSize: 16,
     fontWeight: FontWeight.w600,
     color: AppColors.grayColor,

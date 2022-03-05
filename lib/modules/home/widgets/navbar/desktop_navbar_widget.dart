@@ -1,4 +1,5 @@
 import 'package:ester/app/theme/styles/app_colors.dart';
+import 'package:ester/app/theme/styles/app_images.dart';
 import 'package:ester/app/theme/styles/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -7,54 +8,64 @@ class DesktopNavbarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ThemeData theme = Theme.of(context);
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
       child: SizedBox(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              'Ester Catuaba',
-              style: theme.brightness == Brightness.dark
-                  ? AppTextStyles.homeTitleWhite
-                  : AppTextStyles.homeTitleDark,
+            Image.asset(
+              AppImages.logoAppBar,
+              height: 85,
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Text(
-                  'Sobre nos',
-                  style: theme.brightness == Brightness.dark
-                      ? AppTextStyles.cardTextLightBold
-                      : AppTextStyles.cardTextDarkBold,
+                  'Início',
+                  style: AppTextStyles.cardTextDarkBold,
                 ),
                 const SizedBox(
-                  width: 30,
+                  height: 20,
+                  width: 15,
+                  child: VerticalDivider(
+                    color: AppColors.body,
+                    width: 1,
+                  ),
                 ),
                 Text(
                   'Portfolio',
-                  style: theme.brightness == Brightness.dark
-                      ? AppTextStyles.cardTextLightBold
-                      : AppTextStyles.cardTextDarkBold,
+                  style: AppTextStyles.cardTextDarkBold,
                 ),
                 const SizedBox(
-                  width: 30,
+                  height: 20,
+                  width: 15,
+                  child: VerticalDivider(
+                    color: AppColors.body,
+                    width: 1,
+                  ),
                 ),
-                MaterialButton(
-                  onPressed: () {},
-                  color: AppColors.redButton,
-                  shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(5),
-                    ),
-                  ),
-                  child: Text(
-                    'Contato',
-                    style: AppTextStyles.cardTextLightBold,
-                  ),
+                Text(
+                  'Sobre nós',
+                  style: AppTextStyles.cardTextDarkBold,
                 ),
               ],
-            )
+            ),
+            MaterialButton(
+              elevation: 0,
+              height: 60,
+              onPressed: () {},
+              color: AppColors.grayColor,
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(15),
+                ),
+              ),
+              child: Text(
+                'Contato',
+                style: AppTextStyles.cardTextLightBold,
+              ),
+            ),
           ],
         ),
       ),
