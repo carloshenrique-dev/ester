@@ -5,7 +5,7 @@ import '../../../../../app/theme/styles/app_images.dart';
 import '../../../../../app/theme/styles/app_text_styles.dart';
 
 extension AboutMe on LandingPageWidget {
-  List<Widget> aboutMePage({required double width, required ThemeData theme}) {
+  List<Widget> aboutMePage(double width) {
     return <Widget>[
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
@@ -68,6 +68,7 @@ extension AboutMe on LandingPageWidget {
               child: Image.asset(
                 AppImages.geometria,
                 height: 275,
+                filterQuality: FilterQuality.high,
               ),
             ),
           ],
@@ -76,8 +77,7 @@ extension AboutMe on LandingPageWidget {
     ];
   }
 
-  List<Widget> aboutMeMobilePage(
-      {required double width, required ThemeData theme}) {
+  List<Widget> aboutMeMobilePage(double width) {
     return <Widget>[
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
@@ -140,6 +140,7 @@ extension AboutMe on LandingPageWidget {
               child: Image.asset(
                 AppImages.geometria,
                 height: 275,
+                filterQuality: FilterQuality.high,
               ),
             ),
           ],

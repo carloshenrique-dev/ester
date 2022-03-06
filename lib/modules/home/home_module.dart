@@ -7,7 +7,7 @@ class HomeModule extends Module {
   @override
   List<GetPage> routers = [
     GetPage(
-      name: '/splash',
+      name: '/home',
       page: () => const HomePage(),
       binding: HomeBindings(),
     ),

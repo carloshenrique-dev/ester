@@ -16,6 +16,7 @@ class MobileNavbarWidget extends StatelessWidget {
             Image.asset(
               AppImages.logoAppBar,
               height: 85,
+              filterQuality: FilterQuality.high,
             ),
             const SizedBox(
               height: 20,

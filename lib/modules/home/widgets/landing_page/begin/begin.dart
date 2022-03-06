@@ -2,12 +2,11 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:ester/modules/home/widgets/landing_page/landing_page_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../../../app/theme/styles/app_colors.dart';
 import '../../../../../app/theme/styles/app_images.dart';
 import '../../../../../app/theme/styles/app_text_styles.dart';
 
 extension Begin on LandingPageWidget {
-  List<Widget> beginPage({required double width, required ThemeData theme}) {
+  List<Widget> beginPage() {
     return [
       Stack(
         alignment: Alignment.center,
@@ -15,6 +14,7 @@ extension Begin on LandingPageWidget {
         children: [
           Image.asset(
             AppImages.begin,
+            filterQuality: FilterQuality.high,
           ),
           Column(
             children: [
@@ -23,6 +23,7 @@ extension Begin on LandingPageWidget {
                 height: Get.height * .2,
                 child: Image.asset(
                   AppImages.beginLogo,
+                  filterQuality: FilterQuality.high,
                 ),
               ),
               const SizedBox(
@@ -44,8 +45,7 @@ extension Begin on LandingPageWidget {
     ];
   }
 
-  List<Widget> beginMobilePage(
-      {required double width, required ThemeData theme}) {
+  List<Widget> beginMobilePage() {
     return <Widget>[
       Stack(
         alignment: Alignment.center,
@@ -53,15 +53,23 @@ extension Begin on LandingPageWidget {
         children: [
           Image.asset(
             AppImages.begin,
+            filterQuality: FilterQuality.high,
+            fit: BoxFit.fill,
+            height: 270,
+            width: Get.width,
           ),
           Column(
             children: [
               SizedBox(
                 width: Get.width * .2,
-                height: Get.height * .2,
+                //height: Get.height * .17,
                 child: Image.asset(
                   AppImages.beginLogo,
+                  filterQuality: FilterQuality.high,
                 ),
+              ),
+              SizedBox(
+                height: Get.height * .02,
               ),
               AnimatedTextKit(
                 repeatForever: true,
