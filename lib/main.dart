@@ -24,8 +24,7 @@ class EsterWebSite extends StatelessWidget {
         primaryColor: AppColors.whiteColor,
         unselectedWidgetColor: AppColors.whiteColor,
         textSelectionTheme: const TextSelectionThemeData(
-          cursorColor: AppColors.blue,
-          selectionColor: AppColors.blue,
+          selectionColor: AppColors.lightOrange,
         ),
         focusColor: AppColors.blue,
       ),

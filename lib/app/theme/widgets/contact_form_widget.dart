@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import 'package:ester/app/theme/styles/app_colors.dart';
 import 'package:ester/app/theme/styles/app_text_styles.dart';
 import 'package:ester/app/theme/widgets/text_field_widget.dart';
@@ -20,56 +19,60 @@ class ContactFormWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       height: height,
       decoration: BoxDecoration(
         color: AppColors.lightWhite,
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            'Nome',
-            style: AppTextStyles.textField,
-          ),
-          TextFieldWidget(
-            hintText: 'Ex: Ester',
-            controller: controller.nameController,
-          ),
-          SizedBox(
-            height: Get.height * .01,
-          ),
-          Text(
-            'E-mail',
-            style: AppTextStyles.textField,
-          ),
-          TextFieldWidget(
-            hintText: 'Ex: contato@engenhariaec.com',
-            controller: controller.emailController,
-          ),
-          SizedBox(
-            height: Get.height * .01,
-          ),
-          Text(
-            'Telefone',
-            style: AppTextStyles.textField,
-          ),
-          TextFieldWidget(
-            hintText: 'Ex: (11) 99999-9999',
-            controller: controller.phoneController,
-          ),
-          SizedBox(
-            height: Get.height * .01,
-          ),
-          Text(
-            'Assunto: ',
-            style: AppTextStyles.textField,
-          ),
-          TextFieldWidget(
-            hintText: 'Ex: Desejo a contração de serviços...',
-            controller: controller.subjectController,
+          Form(
+            key: controller.formKey,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                TextFieldWidget(
+                  hintText: 'Ex: Ester',
+                  controller: controller.nameController,
+                  onChanged: (value) =>
+                      controller.validateTextField(name: value),
+                  textInputAction: TextInputAction.send,
+                  validator: controller.isValidName,
+                  label: 'Nome',
+                ),
+                TextFieldWidget(
+                  hintText: 'Ex: contato@engenhariaec.com',
+                  controller: controller.emailController,
+                  onChanged: (value) =>
+                      controller.validateTextField(email: value),
+                  textInputAction: TextInputAction.send,
+                  validator: controller.isValidEmail,
+                  label: 'E-mail',
+                ),
+                TextFieldWidget(
+                  hintText: 'Ex: (11) 99999-9999',
+                  controller: controller.phoneController,
+                  onChanged: (value) =>
+                      controller.validateTextField(phone: value),
+                  textInputAction: TextInputAction.next,
+                  validator: controller.isValidPhone,
+                  label: 'Telefone',
+                ),
+                TextFieldWidget(
+                  hintText: 'Ex: Desejo a contração de serviços...',
+                  controller: controller.subjectController,
+                  onChanged: (value) =>
+                      controller.validateTextField(subject: value),
+                  textInputAction: TextInputAction.send,
+                  validator: controller.isValidSubject,
+                  label: 'Assunto',
+                ),
+              ],
+            ),
           ),
           SizedBox(
             height: Get.height * .02,

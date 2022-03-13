@@ -1,14 +1,15 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:ester/app/theme/styles/app_images.dart';
+import 'package:ester/app/theme/styles/app_text_styles.dart';
 import 'package:ester/modules/home/widgets/landing_page/landing_page_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../../../app/theme/styles/app_images.dart';
-import '../../../../../app/theme/styles/app_text_styles.dart';
 
 extension Begin on LandingPageWidget {
   List<Widget> beginPage() {
     return [
       Stack(
+        key: controller.homeKey,
         alignment: Alignment.center,
         fit: StackFit.loose,
         children: [
@@ -48,6 +49,7 @@ extension Begin on LandingPageWidget {
   List<Widget> beginMobilePage() {
     return <Widget>[
       Stack(
+        key: controller.homeKey,
         alignment: Alignment.center,
         fit: StackFit.loose,
         children: [

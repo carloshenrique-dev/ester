@@ -1,12 +1,13 @@
+import 'package:ester/app/theme/styles/app_text_styles.dart';
 import 'package:ester/modules/home/widgets/landing_page/landing_page_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../../../app/theme/styles/app_text_styles.dart';
 
 extension OurServices on LandingPageWidget {
   List<Widget> ourServicesPage(double width) {
     return <Widget>[
       Padding(
+        key: controller.servicesKey,
         padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
         child: SizedBox(
           width: Get.width,
@@ -60,6 +61,7 @@ extension OurServices on LandingPageWidget {
   List<Widget> ourServicesMobilePage(double width) {
     return <Widget>[
       Padding(
+        key: controller.servicesKey,
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         child: SizedBox(
           width: Get.width,

@@ -1,10 +1,16 @@
-import 'package:ester/app/theme/styles/app_text_styles.dart';
+import 'package:ester/app/theme/widgets/text_with_tap_widget.dart';
 import 'package:flutter/material.dart';
-import '../../../../app/theme/styles/app_colors.dart';
-import '../../../../app/theme/styles/app_images.dart';
+import 'package:ester/app/theme/styles/app_colors.dart';
+import 'package:ester/app/theme/styles/app_images.dart';
+import 'package:ester/app/theme/styles/app_text_styles.dart';
+import 'package:ester/modules/home/home_controller.dart';
 
 class MobileNavbarWidget extends StatelessWidget {
-  const MobileNavbarWidget({Key? key}) : super(key: key);
+  final HomeController controller;
+  const MobileNavbarWidget({
+    Key? key,
+    required this.controller,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,9 +32,10 @@ class MobileNavbarWidget extends StatelessWidget {
               crossAxisAlignment: WrapCrossAlignment.center,
               clipBehavior: Clip.antiAlias,
               children: [
-                Text(
-                  'Início',
-                  style: AppTextStyles.cardTextDarkBold,
+                TextWithTapWidget(
+                  title: 'Início',
+                  onTap: () =>
+                      controller.scrollToWidgetByKey(controller.homeKey),
                 ),
                 const SizedBox(
                   height: 20,
@@ -38,9 +45,10 @@ class MobileNavbarWidget extends StatelessWidget {
                     width: 1,
                   ),
                 ),
-                Text(
-                  'Obras',
-                  style: AppTextStyles.cardTextDarkBold,
+                TextWithTapWidget(
+                  title: 'Obras',
+                  onTap: () => controller
+                      .scrollToWidgetByKey(controller.constructionKey),
                 ),
                 const SizedBox(
                   height: 20,
@@ -50,9 +58,10 @@ class MobileNavbarWidget extends StatelessWidget {
                     width: 1,
                   ),
                 ),
-                Text(
-                  'Sobre nós',
-                  style: AppTextStyles.cardTextDarkBold,
+                TextWithTapWidget(
+                  title: 'Sobre nós',
+                  onTap: () =>
+                      controller.scrollToWidgetByKey(controller.aboutMeKey),
                 ),
                 const SizedBox(
                   height: 20,
@@ -62,9 +71,10 @@ class MobileNavbarWidget extends StatelessWidget {
                     width: 1,
                   ),
                 ),
-                Text(
-                  'Serviços',
-                  style: AppTextStyles.cardTextDarkBold,
+                TextWithTapWidget(
+                  title: 'Serviços',
+                  onTap: () =>
+                      controller.scrollToWidgetByKey(controller.servicesKey),
                 ),
                 const SizedBox(
                   height: 20,
@@ -74,9 +84,10 @@ class MobileNavbarWidget extends StatelessWidget {
                     width: 1,
                   ),
                 ),
-                Text(
-                  'Contato',
-                  style: AppTextStyles.cardTextDarkBold,
+                TextWithTapWidget(
+                  title: 'Contato',
+                  onTap: () =>
+                      controller.scrollToWidgetByKey(controller.contactKey),
                 ),
               ],
             ),

@@ -1,3 +1,4 @@
+import 'package:ester/modules/home/widgets/landing_page/construction/construction.dart';
 import 'package:flutter/material.dart';
 import 'package:ester/modules/home/home_controller.dart';
 import 'package:ester/modules/home/widgets/landing_page/contact/contact.dart';
@@ -21,9 +22,10 @@ class LandingPageWidget extends StatelessWidget {
           children: [
             ...beginPage(),
             ...ourServicesPage(constraints.biggest.width / 2),
-            ...aboutMePage(constraints.biggest.width / 2),
+            ...constructionPage(constraints.biggest.width / 2),
             ...contactPage(
-                width: constraints.biggest.width / 2, controller: controller)
+                width: constraints.biggest.width / 2, controller: controller),
+            ...aboutMePage(constraints.biggest.width / 2),
           ],
         );
       } else {
@@ -31,9 +33,10 @@ class LandingPageWidget extends StatelessWidget {
           children: [
             ...beginMobilePage(),
             ...ourServicesMobilePage(constraints.biggest.width),
-            ...aboutMeMobilePage(constraints.biggest.width),
+            ...constructionPage(constraints.biggest.width),
             ...contactMobilePage(
-                width: constraints.biggest.width, controller: controller)
+                width: constraints.biggest.width, controller: controller),
+            ...aboutMeMobilePage(constraints.biggest.width),
           ],
         );
       }

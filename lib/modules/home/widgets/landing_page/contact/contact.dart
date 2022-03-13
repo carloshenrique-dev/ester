@@ -11,6 +11,7 @@ extension Contact on LandingPageWidget {
       {required double width, required HomeController controller}) {
     return <Widget>[
       Padding(
+        key: controller.contactKey,
         padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
         child: SizedBox(
           width: Get.width,
@@ -62,6 +63,7 @@ extension Contact on LandingPageWidget {
       {required double width, required HomeController controller}) {
     return <Widget>[
       Padding(
+        key: controller.contactKey,
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         child: SizedBox(
           width: width,
@@ -69,22 +71,6 @@ extension Contact on LandingPageWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text(
-                'Contato',
-                style: AppTextStyles.contactBlueTitle,
-                textAlign: TextAlign.center,
-              ),
-              SizedBox(
-                height: Get.height * .01,
-              ),
-              Text(
-                'Precisa de alguma informação ou tem alguma dúvida? Entre em contato!',
-                style: AppTextStyles.homeTitleStrongDark,
-                textAlign: TextAlign.center,
-              ),
-              SizedBox(
-                height: Get.height * .02,
-              ),
               ContactDetailsWidget(
                 width: Get.width,
               ),
@@ -94,7 +80,7 @@ extension Contact on LandingPageWidget {
               ContactFormWidget(
                 controller: controller,
                 buttonWidth: Get.width * .3,
-                height: Get.height * .54,
+                height: Get.height * .45,
               ),
             ],
           ),

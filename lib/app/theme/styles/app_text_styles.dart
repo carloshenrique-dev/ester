@@ -79,15 +79,21 @@ class AppTextStyles {
     fontWeight: FontWeight.bold,
     fontStyle: FontStyle.normal,
   );
+  static final TextStyle fieldTitle = GoogleFonts.mulish(
+    color: AppColors.body,
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
+    fontStyle: FontStyle.normal,
+  );
   static final TextStyle textField = GoogleFonts.mulish(
     color: AppColors.body,
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: FontWeight.bold,
     fontStyle: FontStyle.normal,
   );
   static final TextStyle textFieldData = GoogleFonts.mulish(
     color: AppColors.grayColor,
-    fontSize: 20,
+    fontSize: 16,
     fontWeight: FontWeight.bold,
     fontStyle: FontStyle.normal,
   );
