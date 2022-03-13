@@ -17,15 +17,19 @@ class EsterWebSite extends StatelessWidget {
       title: 'Ester Catuaba',
       initialBinding: ApplicationBindings(),
       theme: ThemeData(
+        iconTheme: const IconThemeData(
+          color: AppColors.whiteColor,
+        ),
         brightness: Brightness.light,
-        primaryColor: AppColors.grayColor,
+        primaryColor: AppColors.whiteColor,
         unselectedWidgetColor: AppColors.whiteColor,
+        textSelectionTheme: const TextSelectionThemeData(
+          cursorColor: AppColors.blue,
+          selectionColor: AppColors.blue,
+        ),
+        focusColor: AppColors.blue,
       ),
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-        unselectedWidgetColor: AppColors.whiteColor,
-      ),
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.light,
       initialRoute: '/home',
       debugShowCheckedModeBanner: false,
       getPages: [

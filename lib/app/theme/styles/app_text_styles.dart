@@ -27,13 +27,13 @@ class AppTextStyles {
   );
   static final TextStyle servicesOrangeTitle = GoogleFonts.mulish(
     color: AppColors.orange,
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
   );
   static final TextStyle contactBlueTitle = GoogleFonts.mulish(
     color: AppColors.blue,
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
   );
@@ -41,6 +41,24 @@ class AppTextStyles {
     color: AppColors.grayColor,
     fontSize: 22,
     fontWeight: FontWeight.w700,
+    fontStyle: FontStyle.normal,
+  );
+  static final TextStyle subtitleWhite = GoogleFonts.mulish(
+    color: AppColors.whiteColor,
+    fontSize: 18,
+    fontWeight: FontWeight.w400,
+    fontStyle: FontStyle.normal,
+  );
+  static final TextStyle buttonStyle = GoogleFonts.mulish(
+    color: AppColors.whiteColor,
+    fontSize: 18,
+    fontWeight: FontWeight.w400,
+    fontStyle: FontStyle.normal,
+  );
+  static final TextStyle contactWhite = GoogleFonts.mulish(
+    color: AppColors.whiteColor,
+    fontSize: 20,
+    fontWeight: FontWeight.w600,
     fontStyle: FontStyle.normal,
   );
   static final TextStyle homeTitleDark = GoogleFonts.mulish(
@@ -57,6 +75,18 @@ class AppTextStyles {
   );
   static final TextStyle cardTextLightBold = GoogleFonts.mulish(
     color: AppColors.whiteColor,
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+    fontStyle: FontStyle.normal,
+  );
+  static final TextStyle textField = GoogleFonts.mulish(
+    color: AppColors.body,
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+    fontStyle: FontStyle.normal,
+  );
+  static final TextStyle textFieldData = GoogleFonts.mulish(
+    color: AppColors.grayColor,
     fontSize: 20,
     fontWeight: FontWeight.bold,
     fontStyle: FontStyle.normal,

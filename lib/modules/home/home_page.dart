@@ -18,9 +18,11 @@ class HomePage extends GetView<HomeController> {
           height: Get.height,
           child: SingleChildScrollView(
             child: Column(
-              children: const [
-                Navbar(),
-                LandingPageWidget(),
+              children: [
+                const Navbar(),
+                LandingPageWidget(
+                  controller: controller,
+                ),
               ],
             ),
           ),
