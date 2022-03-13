@@ -40,7 +40,7 @@ class MobileNavbarWidget extends StatelessWidget {
                   height: 20,
                   width: 15,
                   child: VerticalDivider(
-                    color: AppColors.body,
+                    color: AppColors.grayColor,
                     width: 2,
                     thickness: 2,
                   ),
@@ -54,7 +54,7 @@ class MobileNavbarWidget extends StatelessWidget {
                   height: 20,
                   width: 15,
                   child: VerticalDivider(
-                    color: AppColors.body,
+                    color: AppColors.grayColor,
                     width: 2,
                     thickness: 2,
                   ),
@@ -68,7 +68,7 @@ class MobileNavbarWidget extends StatelessWidget {
                   height: 20,
                   width: 15,
                   child: VerticalDivider(
-                    color: AppColors.body,
+                    color: AppColors.grayColor,
                     width: 2,
                     thickness: 2,
                   ),
@@ -82,7 +82,7 @@ class MobileNavbarWidget extends StatelessWidget {
                   height: 20,
                   width: 15,
                   child: VerticalDivider(
-                    color: AppColors.body,
+                    color: AppColors.grayColor,
                     width: 2,
                     thickness: 2,
                   ),

@@ -36,7 +36,7 @@ class ContactFormMobileWidget extends StatelessWidget {
                   controller: controller.nameController,
                   onChanged: (value) =>
                       controller.validateTextField(name: value),
-                  textInputAction: TextInputAction.send,
+                  textInputAction: TextInputAction.next,
                   validator: controller.isValidName,
                   label: 'Nome',
                 ),
@@ -45,7 +45,7 @@ class ContactFormMobileWidget extends StatelessWidget {
                   controller: controller.emailController,
                   onChanged: (value) =>
                       controller.validateTextField(email: value),
-                  textInputAction: TextInputAction.send,
+                  textInputAction: TextInputAction.next,
                   validator: controller.isValidEmail,
                   label: 'E-mail',
                 ),
@@ -66,6 +66,8 @@ class ContactFormMobileWidget extends StatelessWidget {
                   textInputAction: TextInputAction.send,
                   validator: controller.isValidSubject,
                   label: 'Assunto',
+                  onFieldSubmitted: (value) async =>
+                      await controller.callEmail(),
                 ),
               ],
             ),

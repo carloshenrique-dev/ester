@@ -68,9 +68,9 @@ class HomeController extends GetxController with MessagesMixin {
         }
       } catch (e) {
         await launch(sendEmail);
+        message(MessageModel.error(
+            message: 'Por favor preencha corretamente suas informacoes'.tr));
       }
-      message(MessageModel.error(
-          message: 'Por favor preencha corretamente suas informacoes'.tr));
     }
   }
 

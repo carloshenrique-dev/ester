@@ -9,6 +9,7 @@ class TextFieldWidget extends StatelessWidget {
   final Function(String)? onChanged;
   final String? Function(String?)? validator;
   final TextInputAction? textInputAction;
+  final Function(String)? onFieldSubmitted;
 
   const TextFieldWidget({
     Key? key,
@@ -18,6 +19,7 @@ class TextFieldWidget extends StatelessWidget {
     required this.onChanged,
     required this.validator,
     required this.textInputAction,
+    this.onFieldSubmitted,
   }) : super(key: key);
 
   @override
@@ -50,6 +52,7 @@ class TextFieldWidget extends StatelessWidget {
           borderSide: BorderSide(color: AppColors.body, width: 2),
         ),
       ),
+      onFieldSubmitted: onFieldSubmitted,
     );
   }
 }
