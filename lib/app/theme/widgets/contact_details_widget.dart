@@ -32,7 +32,7 @@ class ContactDetailsWidget extends StatelessWidget {
               textAlign: TextAlign.left,
             ),
             Text(
-              'Preencha o formulario e em ate 24 hrs e estaremos retornando seu contato! :)',
+              'Preencha o formulário e em ate 24 hrs e estaremos retornando seu contato! :)',
               style: AppTextStyles.subtitleWhite,
               textAlign: TextAlign.left,
             ),

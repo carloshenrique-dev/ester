@@ -11,7 +11,7 @@ class ContactDetailsMobileWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-      height: Get.height * .3,
+      height: Get.height * .4,
       width: Get.width,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
@@ -27,7 +27,7 @@ class ContactDetailsMobileWidget extends StatelessWidget {
             textAlign: TextAlign.left,
           ),
           Text(
-            'Preencha o formulario e em ate 24 hrs e estaremos retornando seu contato! :)',
+            'Preencha o formulário e em ate 24 hrs e estaremos retornando seu contato! :)',
             style: AppTextStyles.subtitleWhite,
             textAlign: TextAlign.left,
           ),

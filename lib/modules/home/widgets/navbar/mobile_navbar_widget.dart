@@ -41,7 +41,8 @@ class MobileNavbarWidget extends StatelessWidget {
                   width: 15,
                   child: VerticalDivider(
                     color: AppColors.body,
-                    width: 1,
+                    width: 2,
+                    thickness: 2,
                   ),
                 ),
                 TextWithTapWidget(
@@ -54,7 +55,8 @@ class MobileNavbarWidget extends StatelessWidget {
                   width: 15,
                   child: VerticalDivider(
                     color: AppColors.body,
-                    width: 1,
+                    width: 2,
+                    thickness: 2,
                   ),
                 ),
                 TextWithTapWidget(
@@ -67,7 +69,8 @@ class MobileNavbarWidget extends StatelessWidget {
                   width: 15,
                   child: VerticalDivider(
                     color: AppColors.body,
-                    width: 1,
+                    width: 2,
+                    thickness: 2,
                   ),
                 ),
                 TextWithTapWidget(
@@ -80,7 +83,8 @@ class MobileNavbarWidget extends StatelessWidget {
                   width: 15,
                   child: VerticalDivider(
                     color: AppColors.body,
-                    width: 1,
+                    width: 2,
+                    thickness: 2,
                   ),
                 ),
                 TextWithTapWidget(
