@@ -2,7 +2,6 @@ import 'package:ester/app/theme/widgets/text_with_tap_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:ester/app/theme/styles/app_colors.dart';
 import 'package:ester/app/theme/styles/app_images.dart';
-import 'package:ester/app/theme/styles/app_text_styles.dart';
 import 'package:ester/modules/home/home_controller.dart';
 
 class MobileNavbarWidget extends StatelessWidget {

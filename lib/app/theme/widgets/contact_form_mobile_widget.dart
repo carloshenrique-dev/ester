@@ -5,9 +5,9 @@ import 'package:ester/app/theme/styles/app_text_styles.dart';
 import 'package:ester/app/theme/widgets/text_field_widget.dart';
 import 'package:ester/modules/home/home_controller.dart';
 
-class ContactFormWidget extends StatelessWidget {
+class ContactFormMobileWidget extends StatelessWidget {
   final HomeController controller;
-  const ContactFormWidget({
+  const ContactFormMobileWidget({
     Key? key,
     required this.controller,
   }) : super(key: key);
@@ -16,7 +16,7 @@ class ContactFormWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-      height: Get.height * .45,
+      //height: Get.height * .5,
       decoration: BoxDecoration(
         color: AppColors.lightWhite,
         borderRadius: BorderRadius.circular(10),
@@ -76,7 +76,7 @@ class ContactFormWidget extends StatelessWidget {
           Align(
             alignment: Alignment.bottomRight,
             child: SizedBox(
-              width: Get.width * .11,
+              width: Get.width * .3,
               height: Get.height * .07,
               child: TextButton.icon(
                 onPressed: () async => await controller.callEmail(),

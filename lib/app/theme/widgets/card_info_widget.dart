@@ -1,11 +1,10 @@
-import 'package:ester/app/theme/styles/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ester/app/theme/styles/app_text_styles.dart';
 
 class CardInfoWidget extends StatelessWidget {
   final IconData icon;
   final String title;
-
   const CardInfoWidget({
     Key? key,
     required this.icon,
@@ -25,6 +24,8 @@ class CardInfoWidget extends StatelessWidget {
         Text(
           title,
           style: AppTextStyles.contactWhite,
+          overflow: TextOverflow.ellipsis,
+          maxLines: 1,
         ),
       ],
     );

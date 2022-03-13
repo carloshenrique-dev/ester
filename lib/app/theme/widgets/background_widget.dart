@@ -22,7 +22,7 @@ class Background extends StatelessWidget {
             right: 0,
             child: Image.asset(
               AppImages.background,
-              width: size.width * 0.2,
+              width: size.width * 0.1,
               fit: BoxFit.fill,
               filterQuality: FilterQuality.high,
             ),

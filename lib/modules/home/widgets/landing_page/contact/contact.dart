@@ -1,5 +1,7 @@
 import 'package:ester/app/theme/styles/app_text_styles.dart';
+import 'package:ester/app/theme/widgets/contact_details_mobile_widget.dart';
 import 'package:ester/app/theme/widgets/contact_details_widget.dart';
+import 'package:ester/app/theme/widgets/contact_form_mobile_widget.dart';
 import 'package:ester/app/theme/widgets/contact_form_widget.dart';
 import 'package:ester/modules/home/home_controller.dart';
 import 'package:ester/modules/home/widgets/landing_page/landing_page_widget.dart';
@@ -37,17 +39,13 @@ extension Contact on LandingPageWidget {
               ),
               Row(
                 children: [
-                  ContactDetailsWidget(
-                    width: Get.width * .4,
-                  ),
+                  const ContactDetailsWidget(),
                   SizedBox(
                     width: Get.width * .01,
                   ),
                   Expanded(
                     child: ContactFormWidget(
                       controller: controller,
-                      buttonWidth: Get.width * .11,
-                      height: Get.height * .45,
                     ),
                   ),
                 ],
@@ -71,16 +69,12 @@ extension Contact on LandingPageWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              ContactDetailsWidget(
-                width: Get.width,
-              ),
+              const ContactDetailsMobileWidget(),
               SizedBox(
                 height: Get.height * .02,
               ),
-              ContactFormWidget(
+              ContactFormMobileWidget(
                 controller: controller,
-                buttonWidth: Get.width * .3,
-                height: Get.height * .45,
               ),
             ],
           ),

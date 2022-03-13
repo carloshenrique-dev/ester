@@ -7,10 +7,8 @@ import 'package:ester/app/theme/widgets/background_widget.dart';
 import 'card_info_widget.dart';
 
 class ContactDetailsWidget extends StatelessWidget {
-  final double? width;
   const ContactDetailsWidget({
     Key? key,
-    this.width,
   }) : super(key: key);
 
   @override
@@ -18,14 +16,14 @@ class ContactDetailsWidget extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
       height: Get.height * .45,
-      width: width,
+      width: Get.width * .4,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         color: AppColors.blue,
       ),
       child: Background(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(

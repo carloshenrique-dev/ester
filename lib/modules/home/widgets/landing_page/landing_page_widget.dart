@@ -22,9 +22,9 @@ class LandingPageWidget extends StatelessWidget {
           children: [
             ...beginPage(),
             ...ourServicesPage(constraints.biggest.width / 2),
-            ...constructionPage(constraints.biggest.width / 2),
             ...contactPage(
                 width: constraints.biggest.width / 2, controller: controller),
+            ...constructionPage(constraints.biggest.width / 2),
             ...aboutMePage(constraints.biggest.width / 2),
           ],
         );
@@ -33,9 +33,9 @@ class LandingPageWidget extends StatelessWidget {
           children: [
             ...beginMobilePage(),
             ...ourServicesMobilePage(constraints.biggest.width),
-            ...constructionPage(constraints.biggest.width),
             ...contactMobilePage(
                 width: constraints.biggest.width, controller: controller),
+            ...constructionPage(constraints.biggest.width),
             ...aboutMeMobilePage(constraints.biggest.width),
           ],
         );
