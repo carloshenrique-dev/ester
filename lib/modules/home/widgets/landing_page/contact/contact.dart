@@ -42,10 +42,12 @@ extension Contact on LandingPageWidget {
                   SizedBox(
                     width: Get.width * .01,
                   ),
-                  ContactFormWidget(
-                    controller: controller,
-                    buttonWidth: Get.width * .11,
-                    height: Get.height * .535,
+                  Expanded(
+                    child: ContactFormWidget(
+                      controller: controller,
+                      buttonWidth: Get.width * .11,
+                      height: Get.height * .45,
+                    ),
                   ),
                 ],
               ),
@@ -92,7 +94,7 @@ extension Contact on LandingPageWidget {
               ContactFormWidget(
                 controller: controller,
                 buttonWidth: Get.width * .3,
-                height: Get.height * .45,
+                height: Get.height * .54,
               ),
             ],
           ),
