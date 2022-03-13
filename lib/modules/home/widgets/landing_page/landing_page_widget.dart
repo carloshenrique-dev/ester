@@ -22,7 +22,7 @@ class LandingPageWidget extends StatelessWidget {
         return Column(
           children: [
             ...beginMobilePage(),
-            ...ourServicesPage(constraints.biggest.width),
+            ...ourServicesMobilePage(constraints.biggest.width),
             ...aboutMeMobilePage(constraints.biggest.width),
           ],
         );

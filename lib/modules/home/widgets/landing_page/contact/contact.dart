@@ -3,27 +3,27 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../../../app/theme/styles/app_text_styles.dart';
 
-extension OurServices on LandingPageWidget {
-  List<Widget> ourServicesPage(double width) {
+extension Contact on LandingPageWidget {
+  List<Widget> contactPage(double width) {
     return <Widget>[
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
         child: SizedBox(
           width: Get.width,
-          child: Column(
+          child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                'Nossos Serviços',
-                style: AppTextStyles.servicesOrangeTitle,
+                'Contato',
+                style: AppTextStyles.contactBlueTitle,
                 textAlign: TextAlign.center,
               ),
               SizedBox(
                 height: Get.height * .01,
               ),
               Text(
-                'Do que você precisa?',
+                'Precisa de alguma informação ou tem alguma dúvida? Entre em contato!',
                 style: AppTextStyles.homeTitleStrongDark,
                 textAlign: TextAlign.center,
               ),
@@ -57,7 +57,7 @@ extension OurServices on LandingPageWidget {
     ];
   }
 
-  List<Widget> ourServicesMobilePage(double width) {
+  List<Widget> contactMobilePage(double width) {
     return <Widget>[
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),

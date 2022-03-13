@@ -9,7 +9,7 @@ class AppTextStyles {
     color: AppColors.whiteColor,
   );
   static final servicesCardTitle = GoogleFonts.mulish(
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: FontWeight.w800,
     color: AppColors.whiteColor,
   );
@@ -27,7 +27,13 @@ class AppTextStyles {
   );
   static final TextStyle servicesOrangeTitle = GoogleFonts.mulish(
     color: AppColors.orange,
-    fontSize: 18,
+    fontSize: 20,
+    fontWeight: FontWeight.w700,
+    fontStyle: FontStyle.normal,
+  );
+  static final TextStyle contactBlueTitle = GoogleFonts.mulish(
+    color: AppColors.blue,
+    fontSize: 20,
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
   );
@@ -35,18 +41,6 @@ class AppTextStyles {
     color: AppColors.grayColor,
     fontSize: 22,
     fontWeight: FontWeight.w700,
-    fontStyle: FontStyle.normal,
-  );
-  static final TextStyle lotesTitleWhite = GoogleFonts.mulish(
-    color: AppColors.whiteColor,
-    fontSize: 22,
-    fontWeight: FontWeight.w700,
-    fontStyle: FontStyle.normal,
-  );
-  static final TextStyle homeTitleWhite = GoogleFonts.mulish(
-    color: AppColors.whiteColor,
-    fontSize: 25,
-    fontWeight: FontWeight.w600,
     fontStyle: FontStyle.normal,
   );
   static final TextStyle homeTitleDark = GoogleFonts.mulish(
@@ -66,46 +60,5 @@ class AppTextStyles {
     fontSize: 20,
     fontWeight: FontWeight.bold,
     fontStyle: FontStyle.normal,
-  );
-  static final captionBodyLight = GoogleFonts.mulish(
-    fontSize: 13,
-    fontWeight: FontWeight.w400,
-    color: AppColors.body,
-  );
-  static final captionBodyDark = GoogleFonts.mulish(
-    fontSize: 13,
-    fontWeight: FontWeight.w400,
-    color: AppColors.whiteColor,
-  );
-  static final trailingRegularLight = GoogleFonts.mulish(
-    fontSize: 16,
-    fontWeight: FontWeight.w400,
-    color: AppColors.whiteColor,
-  );
-  static final bottomText = GoogleFonts.mulish(
-    fontSize: 14,
-    fontWeight: FontWeight.w400,
-    color: AppColors.whiteColor,
-  );
-
-  static final qtdBoldLight = GoogleFonts.mulish(
-    fontSize: 18,
-    fontWeight: FontWeight.w600,
-    color: AppColors.whiteColor,
-  );
-  static final trailingRegularDark = GoogleFonts.mulish(
-    fontSize: 16,
-    fontWeight: FontWeight.w400,
-    color: AppColors.grayColor,
-  );
-  static final trailingBoldLight = GoogleFonts.mulish(
-    fontSize: 16,
-    fontWeight: FontWeight.w600,
-    color: AppColors.whiteColor,
-  );
-  static final trailingBoldDark = GoogleFonts.mulish(
-    fontSize: 16,
-    fontWeight: FontWeight.w600,
-    color: AppColors.grayColor,
   );
 }
